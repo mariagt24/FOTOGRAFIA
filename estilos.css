@@ -1,0 +1,230 @@
+
+body{
+  font-family: 'Dancing Script', cursive;
+  background-color: #02010a;
+}
+
+a.sinraya:link{text-decoration: none;}
+
+
+@media (min-width:900px){
+  .contenido{  max-width:900px;}
+}
+
+@media (max-width:900px){
+  .contenido{width: 100%;}
+}
+
+.contenido{
+  margin: 0 auto;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  position: center;
+}
+
+/* ------------------ENCABEZADO---------------*/
+
+@media screen and (max-width: 900px) {
+     #encabezado{flex-direction: column;}
+
+     #titulo{width: 100%;
+        display: inline-flex;
+        text-align: center;}
+
+     #titulo h1{width: 50%;}
+
+     nav {padding-left: 20%;
+          padding-right: 20%;
+          width: 60%;}
+}
+
+@media screen and (min-width:900px){
+      #encabezado{display: flex;
+                  height:8%;}
+
+      #titulo {width:50%;}
+
+      #titulo h1{width:100%;}
+
+      nav {padding-left: 10%;
+           padding-right: 10%;
+           width:30%;}
+}
+
+#encabezado{
+  text-align: center;
+  background-color: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  animation-name: mianimacion;
+  animation-duration: 2s;}
+
+#titulo {
+     background-color:#5b7989;
+     text-shadow: 2px 2px 2px #02010a;
+     align: center;}
+
+#titulo h1{
+   font-size: 30px;
+   margin: auto;
+   vertical-align: middle;}
+
+nav{
+  display: flex;
+  background-color: #5b7989;
+  font-size: 20px;
+  padding-top: 10px;}
+
+nav a {
+  background-color: #5b7989;
+  color: white;
+  text-align: center;
+  width: 100%;}
+
+/*-----------------SECCION UNA FOTO---------------------*/
+
+@media screen and (max-width: 900px){
+
+  #unafoto{flex-flow:  column;}
+
+  #unafoto img{margin:5%;
+               width:90%;}
+}
+
+@media screen and (min-width: 900px){
+
+  #unafoto{width: 100%;
+           height: 400px;}
+
+  #unafoto img{margin:auto;
+               width: 80%;}
+}
+
+#unafoto{background-color: #82c3a6;
+  display: flex;}
+  
+#unafoto img{box-shadow: 2px 2px 2px black;}
+
+
+/*-------------SECCION DOS FOTOS-------------------*/
+
+@media screen and (max-width: 900px){
+
+  #dosfotos {flex-direction:column;}
+  #paisajes{margin:5%;}
+  #retratos{margin:5%;}
+}
+
+@media screen and (min-width: 900px){
+
+  #dosfotos {background-color:#d5c75f;
+             height: 350px;
+             display: flex;
+             flex-direction: row;}
+
+  #paisajes {width:50%;
+             float: left;}
+
+  #paisajes img {height: 100%;}
+
+  #retratos {float: right;
+             width: 50%;}
+
+  #retratos img {height:100%;}
+}
+
+#dosfotos {background-color:#d5c75f;
+           display: flex;}
+
+#dosfotos figcaption, a{font-weight: bold;
+                        color: black;
+                        text-align: center;}
+
+#paisajes{margin:5%;}
+
+#paisajes img{
+  box-shadow: 2px 2px 2px black;
+  width: 100%;}
+
+#paisajes img:hover{
+  box-shadow:4px solid #82c3a6;
+  transform: rotate(10deg);}
+
+#retratos{margin:5%;}
+
+#retratos img{box-shadow: 2px 2px 2px black; 
+              width: 100%;}
+
+#retratos img:hover{box-shadow:2px solid #82c3a6;
+                    transform:translate(5px,-20px);}
+
+/*--------------FOOTER---------------------*/
+
+@media screen and (max-width: 900px){
+  footer{flex-direction: column;}
+    }
+
+@media screen and (min-width: 900px){
+  footer{flex-direction: row;
+           height: 25%;}
+    }
+
+
+footer{
+  display: flex;
+  clear: both;
+  width: 100%;
+  background-color:#C6d5c5;
+  bottom: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-weight: bold;
+  font-size:15px;
+  color: black;}
+
+.cajafoot{
+  margin-left:2%;
+  width: 100%;
+  align-content: center;
+  text-align: left;}
+
+.cajafoot h1 {margin-top: 0;}
+
+.cajafoot a{
+  text-decoration: none;
+   color: black;
+}
+
+#contacto a{text-decoration: underline;}
+
+.cajafoot p {
+  margin-top: 0;
+  font-size: 16px;}
+
+.cajafoot img{
+  width:10%;
+  vertical-align: middle;}
+
+
+
+/*-----------animacion de la pagina---------*/
+
+@keyframes mianimacion {
+0% {
+position: relative;
+margin-top: 150%;
+}
+60% {
+position: relative;
+margin-top: -5%;
+}
+100% {
+position: relative;
+margin-top: 0;
+}
+}
